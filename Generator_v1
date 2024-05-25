@@ -11,7 +11,7 @@ const mainClasses = {
     Mage: { name: "Mage", specs: ['Arcane', 'Fire', 'Frost'] },
     Monk: { name: "Monk", specs: ['Windwalker', 'Brewmaster', 'Mistweaver'] },
     DemonHunter: { name: "Demon Hunter", specs: ['Vengeance', 'Havoc'] },
-    Evoker: { name: "Evoker", specs: ['Augmentation', 'Devistation', 'Preservation'] }
+    Evoker: { name: "Evoker", specs: ['Augmentation', 'Devastation', 'Preservation'] }
 }
 const mainCharacter = [
     { mainRace: "Human", mainClass: [mainClasses.Warrior, mainClasses.Hunter, mainClasses.Mage, mainClasses.Priest, mainClasses.Rogue, mainClasses.Paladin, mainClasses.Warlock, mainClasses.Monk, mainClasses.DeathKnight,] },
