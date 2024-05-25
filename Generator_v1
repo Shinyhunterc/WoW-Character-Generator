@@ -13,37 +13,39 @@ const mainClasses = {
     DemonHunter: { name: "Demon Hunter", specs: ['Vengeance', 'Havoc'] },
     Evoker: { name: "Evoker", specs: ['Augmentation', 'Devistation', 'Preservation'] }
 }
-const mainCharacter = [{ mainRace: "Human", mainClass: [mainClasses.Warrior, mainClasses.Hunter, mainClasses.Mage, mainClasses.Priest, mainClasses.Rogue, mainClasses.Paladin, mainClasses.Warlock, mainClasses.Monk, mainClasses.DeathKnight,] },
-{ mainRace: "Dwarf", mainClass: [mainClasses.Warrior, mainClasses.Hunter, mainClasses.Mage, mainClasses.Priest, mainClasses.Rogue, mainClasses.Paladin, mainClasses.Warlock, mainClasses.Shaman, mainClasses.Monk, mainClasses.DeathKnight,] },
-{ mainRace: "Night Elf", mainClass: [mainClasses.Warrior, mainClasses.Hunter, mainClasses.Mage, mainClasses.Priest, mainClasses.Rogue, mainClasses.Warlock, mainClasses.Monk, mainClasses.DeathKnight, mainClasses.Druid, mainClasses.DemonHunter] },
-{ mainRace: "Gnome", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
-{ mainRace: "Draenei", mainClass: [mainClasses.DeathKnight, mainClasses.Paladin, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
-{ mainRace: "Worgen", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Priest, mainClasses.Rogue, mainClasses.Druid, mainClasses.Mage, mainClasses.Monk] },
-{ mainRace: "Pandaren", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
-{ mainRace: "Drakthyr", mainClass: [mainClasses.Evoker] },
-{ mainRace: "Orc", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
-{ mainRace: "Undead", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
-{ mainRace: "Tauren", mainClass: [mainClasses.DeathKnight, mainClasses.Paladin, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Druid, mainClasses.Mage, mainClasses.Monk] },
-{ mainRace: "Troll", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Druid, mainClasses.Mage, mainClasses.Monk] },
-{ mainRace: "Blood Elf", mainClass: [mainClasses.DeathKnight, mainClasses.DemonHunter, mainClasses.Paladin, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
-{ mainRace: "Goblin", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
-{ mainRace: "Dark Iron Dwarf", mainClass: [mainClasses.DeathKnight, mainClasses.Paladin, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
-{ mainRace: "Kul Tiran", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Druid, mainClasses.Mage, mainClasses.Monk] },
-{ mainRace: "Lightforged Draenei", mainClass: [mainClasses.DeathKnight, mainClasses.Paladin, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
-{ mainRace: "Mechagnome", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
-{ mainRace: "Void Elf", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
-{ mainRace: "Highmountain Tauren", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Druid, mainClasses.Mage, mainClasses.Monk] },
-{ mainRace: "Mag'har Orc", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
-{ mainRace: "Nightborne", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
-{ mainRace: "Vulpera", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
-{ mainRace: "Zandalari Troll", mainClass: [mainClasses.DeathKnight, mainClasses.Paladin, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Druid, mainClasses.Mage, mainClasses.Monk] }]
+const mainCharacter = [
+    { mainRace: "Human", mainClass: [mainClasses.Warrior, mainClasses.Hunter, mainClasses.Mage, mainClasses.Priest, mainClasses.Rogue, mainClasses.Paladin, mainClasses.Warlock, mainClasses.Monk, mainClasses.DeathKnight,] },
+    { mainRace: "Dwarf", mainClass: [mainClasses.Warrior, mainClasses.Hunter, mainClasses.Mage, mainClasses.Priest, mainClasses.Rogue, mainClasses.Paladin, mainClasses.Warlock, mainClasses.Shaman, mainClasses.Monk, mainClasses.DeathKnight,] },
+    { mainRace: "Night Elf", mainClass: [mainClasses.Warrior, mainClasses.Hunter, mainClasses.Mage, mainClasses.Priest, mainClasses.Rogue, mainClasses.Warlock, mainClasses.Monk, mainClasses.DeathKnight, mainClasses.Druid, mainClasses.DemonHunter] },
+    { mainRace: "Gnome", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
+    { mainRace: "Draenei", mainClass: [mainClasses.DeathKnight, mainClasses.Paladin, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
+    { mainRace: "Worgen", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Priest, mainClasses.Rogue, mainClasses.Druid, mainClasses.Mage, mainClasses.Monk] },
+    { mainRace: "Pandaren", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
+    { mainRace: "Drakthyr", mainClass: [mainClasses.Evoker] },
+    { mainRace: "Orc", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
+    { mainRace: "Undead", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
+    { mainRace: "Tauren", mainClass: [mainClasses.DeathKnight, mainClasses.Paladin, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Druid, mainClasses.Mage, mainClasses.Monk] },
+    { mainRace: "Troll", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Druid, mainClasses.Mage, mainClasses.Monk] },
+    { mainRace: "Blood Elf", mainClass: [mainClasses.DeathKnight, mainClasses.DemonHunter, mainClasses.Paladin, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
+    { mainRace: "Goblin", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
+    { mainRace: "Dark Iron Dwarf", mainClass: [mainClasses.DeathKnight, mainClasses.Paladin, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
+    { mainRace: "Kul Tiran", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Druid, mainClasses.Mage, mainClasses.Monk] },
+    { mainRace: "Lightforged Draenei", mainClass: [mainClasses.DeathKnight, mainClasses.Paladin, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
+    { mainRace: "Mechagnome", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
+    { mainRace: "Void Elf", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
+    { mainRace: "Highmountain Tauren", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Druid, mainClasses.Mage, mainClasses.Monk] },
+    { mainRace: "Mag'har Orc", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
+    { mainRace: "Nightborne", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
+    { mainRace: "Vulpera", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
+    { mainRace: "Zandalari Troll", mainClass: [mainClasses.DeathKnight, mainClasses.Paladin, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Druid, mainClasses.Mage, mainClasses.Monk] }
+]
 //13 objects and each one hold the specs that it can be   
-const randomMainCharacter = mainCharacter[Math.floor(Math.random() * mainCharacter.length)]; 
-const myRace = randomMainCharacter.mainRace; 
-const myClass = randomMainCharacter.mainClass[Math.floor(Math.random() * randomMainCharacter.mainClass.length)]; 
-const myMainClass = myClass.name; 
-const myMainSpec = myClass.specs[Math.floor(Math.random() * myClass.specs.length)]; 
-let mainSpec: string[] = [] 
+const randomMainCharacter = mainCharacter[Math.floor(Math.random() * mainCharacter.length)];
+const myRace = randomMainCharacter.mainRace;
+const myClass = randomMainCharacter.mainClass[Math.floor(Math.random() * randomMainCharacter.mainClass.length)];
+const myMainClass = myClass.name;
+const myMainSpec = myClass.specs[Math.floor(Math.random() * myClass.specs.length)];
+let mainSpec: string[] = []
 //Random Name Generator 
 const consonantLetters = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z"];
 const vowelLetters = ["a", "e", "i", "o", "u"]
