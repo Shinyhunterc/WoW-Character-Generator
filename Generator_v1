@@ -38,7 +38,13 @@ const mainCharacter = [{ mainRace: "Human", mainClass: [mainClasses.Warrior, mai
 { mainRace: "Vulpera", mainClass: [mainClasses.DeathKnight, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Mage, mainClasses.Monk] },
 { mainRace: "Zandalari Troll", mainClass: [mainClasses.DeathKnight, mainClasses.Paladin, mainClasses.Warrior, mainClasses.Warlock, mainClasses.Hunter, mainClasses.Shaman, mainClasses.Priest, mainClasses.Rogue, mainClasses.Druid, mainClasses.Mage, mainClasses.Monk] }]
 //13 objects and each one hold the specs that it can be   
-const randomMainCharacter = mainCharacter[Math.floor(Math.random() * mainCharacter.length)]; const myRace = randomMainCharacter.mainRace; const myClass = randomMainCharacter.mainClass[Math.floor(Math.random() * randomMainCharacter.mainClass.length)]; const myMainClass = myClass.name; const myMainSpec = myClass.specs[Math.floor(Math.random() * myClass.specs.length)]; let mainSpec: string[] = [] //Random Name Generator 
+const randomMainCharacter = mainCharacter[Math.floor(Math.random() * mainCharacter.length)]; 
+const myRace = randomMainCharacter.mainRace; 
+const myClass = randomMainCharacter.mainClass[Math.floor(Math.random() * randomMainCharacter.mainClass.length)]; 
+const myMainClass = myClass.name; 
+const myMainSpec = myClass.specs[Math.floor(Math.random() * myClass.specs.length)]; 
+let mainSpec: string[] = [] 
+//Random Name Generator 
 const consonantLetters = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z"];
 const vowelLetters = ["a", "e", "i", "o", "u"]
 let randomName = [];
